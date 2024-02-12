@@ -7,7 +7,6 @@ body {
     background-position: center; 
     background-repeat: no-repeat;
     overflow: hidden;
-    font: ;
 }
 
 .overlay {
@@ -16,13 +15,13 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 main {
     width: 30vw;
     height: 100%;
-    background-color: rgb(255, 255, 255,0.9);
+    background-color: rgb(255, 255, 255,0.8);
     border: 1px solid #ddd;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
@@ -59,7 +58,7 @@ input, button {
     margin-bottom: 10px;
     box-sizing: border-box;
     border: none;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid gray;
     background-color: transparent;
     border-radius: 5px;
     font-size: 16px; 

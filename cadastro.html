@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="cadastro.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeCare - Cadastro de Endereço</title>
+</head>
+<body>
+
+<div class="container">
+    <h1>Cadastro de Endereço</h1>
+    <form action="cadastrar_endereco.php" method="post">
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep" placeholder="Digite o CEP" required>
+
+        <label for="logradouro">Logradouro:</label>
+        <input type="text" id="logradouro" name="logradouro" placeholder="Digite o Logradouro" required>
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" placeholder="Digite a Cidade" required>
+
+        <label for="estado">Estado:</label>
+        <input type="text" id="estado" name="estado" placeholder="Digite o Estado" required>
+
+        <input type="submit" value="Cadastrar">
+    </form>
+</div>
+
+</body>
+</html>
