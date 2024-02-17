@@ -5,11 +5,30 @@ body{
     background-color: white;
 }
 
+html, body{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #245276;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #129383;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #7587cd;
+}
+
 header {
-    background-color: white;
+    background-color: #245276;
     display: flex;
     justify-content: center;
     width: 100%;
+    padding: 15px 0px;
 }
 
 header img{
@@ -17,47 +36,14 @@ header img{
     height: auto;
 }
 
-/*nav {
+nav {
     text-align: center;
     padding: 10px;
     background-color: #245276;
-    top: 0;
-    align-items: center;
-    font-weight: bold;
-    font-family: League Sparta;
-}
-
-a {
-    padding: 10px 30px;
-    font-size: medium;
-}
-
-a:link {
-    color: white;
-    text-decoration: none;
-}
-
-a:visited {
-    color: #ddd;
-}
-
-a.active {
-    border-radius: 5px;
-    color: black;
-    background: #129383  ;
-}
-
-a:hover {
-    border-radius: 5px;
-    color: black;
-    background: #129383;
-}*/
-nav {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #245276;
     font-weight: bold;
     font-family: 'League Spartan', sans-serif;
+    position: sticky;
+    top: 0;
 }
 
 a {
@@ -96,14 +82,6 @@ a:hover {
     }
 }
 
-main{
-    background-image: url(./images/backgroundhome.jpg);
-    height: 100vh;
-    background-size: cover; 
-    background-position: top;
-    background-repeat: no-repeat;
-}
-
 main h2 {
     font-family: "League Spartan", sans-serif;
     font-optical-sizing: auto;
@@ -120,7 +98,12 @@ p{
     font-size: larger;
 }
 
-.container {
+.aboutUs_container {
+    background-image: url(./images/backgroundhome.jpg);
+    height: 100vh;
+    background-size: cover; 
+    background-position: top;
+    background-repeat: no-repeat;
     width: 100%;
     height: auto;
     display: flex;
@@ -128,10 +111,30 @@ p{
     align-items: center;
 }
 
-.aboutUs_container{
+.aboutUs_text   {
     background-color: white;
-    max-width: 40%;
-    
+    width: 40%;
+    margin: 10%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.values_container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(220, 220, 220);
+}
+
+.values_text{
+    background-color: #245276;
+    color: #fff;
+    width: auto;
+    text-align: center;
     margin: 10%;
     padding: 20px;
     border-radius: 10px;
@@ -149,8 +152,12 @@ p{
 }*/
 
 @media (max-width: 1024px) {
-    .aboutUs_container{
-        max-width: fit-content;
+    .aboutUs_text{
+        width: fit-content;
+    }
+
+    .values_container{
+        flex-direction: column;
     }
 }
 
