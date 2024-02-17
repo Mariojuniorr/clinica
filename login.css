@@ -34,6 +34,7 @@ main {
 
 
 main img{
+    margin: 0 auto;
     width: 55%;
     margin: 10% 10%;
 }
@@ -50,6 +51,7 @@ main img{
 
 .registerLink{
     font-size: small;
+    text-align: center;
 }
 
 input, button {
@@ -81,13 +83,18 @@ input:focus{
     box-shadow: 0 0 10px gray;
 }
 
-@media screen and (max-width: 970px) {
-    main{
-        width: 100%;
-        justify-content: center;
-    }
+footer{
+    color: #ddd;
+    background-color: rgb(28, 29, 31);
+    position: absolute;
+    width: 100%;
+    display: flex;
+    bottom: 0;
+    padding: 5px;
+    font-size: small;
+    justify-content: center;
+}
 
-    main img{
-        margin: 0;
-    }
+@media screen and (max-width: 970px) {
+
 }

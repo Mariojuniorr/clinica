@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+body{
+    margin: 0 auto;
+    background-color: white;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+header img{
+    width: 10vw;
+    height: auto;
+}
+
+/*nav {
+    text-align: center;
+    padding: 10px;
+    background-color: #245276;
+    top: 0;
+    align-items: center;
+    font-weight: bold;
+    font-family: League Sparta;
+}
+
+a {
+    padding: 10px 30px;
+    font-size: medium;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #ddd;
+}
+
+a.active {
+    border-radius: 5px;
+    color: black;
+    background: #129383  ;
+}
+
+a:hover {
+    border-radius: 5px;
+    color: black;
+    background: #129383;
+}*/
+nav {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #245276;
+    font-weight: bold;
+    font-family: 'League Spartan', sans-serif;
+}
+
+a {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin: 0 30px; 
+}
+
+a:link,
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a.active {
+    border-radius: 5px;
+    color: black;
+    background: #129383;
+}
+
+a:hover {
+    border-radius: 5px;
+    color: black;
+    background: #129383;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    a {
+        margin: 5px;
+    }
+}
+
+main{
+    background-image: url(./images/backgroundhome.jpg);
+    height: 100vh;
+    background-size: cover; 
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+main h2 {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 40px;
+}
+
+p{
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: larger;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.aboutUs_container{
+    background-color: white;
+    max-width: 40%;
+    
+    margin: 10%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/*footer{
+    color: #ddd;
+    background-color: #245276;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    bottom: 0;
+    font-size: small;
+}*/
+
+@media (max-width: 1024px) {
+    .aboutUs_container{
+        max-width: fit-content;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
