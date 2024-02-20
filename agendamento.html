@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="agendamento.css">
+    <link rel="icon" href="./images/logo-semfundo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento - PrimeCare</title>
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <main>
+        <div class="cadastroEndereco">
+            <h1>Agendamento Consulta Médica</h1>
+            <form action="agendamento_consulta.php" method="post">
+                <p>Especialidade:
+                    <select name="especialidade">
+                        <option> a definir lista</option>
+                    </select>
+                </p>
+                <p>Médico Especialista:
+                    <select name="medico">
+                        <option> a definir lista</option>
+                    </select>
+                </p>
+                <label for="data">Data da Consulta:</label>
+                <input type="datetime-local" id="data" name="data">
+            </form>
+        </div>
+        <div>
+            <h2>Dados Pessoais</h2>
+            <form action="cadastrar_dados.php" method="post">
+                <p>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu Nome Completo" required>
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu Email" required>
+                </p>
+                <fieldset>
+                    <legend>Sexo</legend>
+                    <div class="options">
+                        <input class="options" type="radio" id="feminino" name="sex" value="feminino">
+                        <label for="feminino">Feminino</label>
+                    </div>
+                    <div class="options">
+                        <input class="options" type="radio" id="masculino" name="sex" value="masculino">
+                        <label for="masculino">Masculino</label>
+                    </div>
+                </fieldset>
+                <p class="submit">
+                    <input type="submit" value="Cadastrar">
+                </p>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

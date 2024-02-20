@@ -39,17 +39,16 @@ div img{
 
 h1 {
     text-align: center;
-    margin: 20px;
-    
+    margin: 20px;    
 }
 
-label {
+label,p {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
-input[type="text"] {
+input[type="text"], input[type="email"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -58,6 +57,20 @@ input[type="text"] {
     box-sizing: border-box;
 }
 
+select,input {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    display: block;
+}
+.options{
+    width: auto;
+    display: flex;
+} 
+
 input[type="submit"] {
     background-color: #129383;
     color: #fff;
@@ -65,10 +78,17 @@ input[type="submit"] {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+
 }
 
 input[type="submit"]:hover {
     background-color: #0b6c5e;
+}
+
+.submit{
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
 }
 
 @media screen and (max-width: 970px) {
