@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/novoEnd_style.css">
+    <link rel="stylesheet" href="./css/navBar.css">
+    <link rel="icon" href="./images/logo-semfundo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Endereço - PrimeCare</title>
+</head>
+<body>
+    <header>
+        <div class="center">
+        <div class="logo"><img src="images/logo.png" alt="Logo Clínica Médica"></div>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="agendamento.html">Agendamento</a>
+                <a class="active" href="novoEnd.html">Novo Endereço</a>
+                <a href="login.html">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="overlay"></div>
+    <main>
+        <div class="cadastroEndereco">
+            <h1>Cadastro de Endereço</h1>
+            <form action="cadastrar_endereco.php" method="post">
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep" placeholder="Digite o CEP" required>
+
+                <label for="logradouro">Logradouro:</label>
+                <input type="text" id="logradouro" name="logradouro" placeholder="Digite o Logradouro" required>
+
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" placeholder="Digite a Cidade" required>
+
+                <label for="estado">Estado:</label>
+                <input type="text" id="estado" name="estado" placeholder="Digite o Estado" required>
+
+                <input type="submit" value="Cadastrar">
+            </form>
+        </div>
+    </main>
+</body>
+</html>

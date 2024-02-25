@@ -3,30 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="./css/login_style.css">
     <link rel="icon" href="./images/logo-semfundo.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Login - PrimeCare</title>
 </head>
 <body>
-    <header>
-        <nav>
-
-        </nav>
-    </header>
     <div class="overlay"></div>
     <main>
-        <img src="./images/logo-semfundo.png" alt="Logo PrimeCare">
+        <form action="login.php" method="post">
+            <img src="./images/logo-semfundo.png" alt="Logo PrimeCare">
             <div class="loginFields">
                 <label for="usuario">Usuário: </label>
                 <input type="text" name="usuario" id="usuario" placeholder="Usuário">
                 <label for="senha">Senha: </label>
                 <input type="password" name="senha" id="senha" placeholder="Senha">
-                <button><span class="material-symbols-outlined">login</span> Entrar </button>
+                <button type="button"><span class="material-symbols-outlined">login</span> Entrar </button>
             </div>
-            <div class="registerLink">
-                <p>Ainda não é cadastrado ou esqueceu a senha? Contate o suporte. <a href="cadastro.html">Cadastre-se</a></p>
-            </div>
+            <p> Ainda não é cadastrado ou esqueceu a senha? Contate o suporte.</p>
+        </form>
       </main>
 
       <footer>© 2024 Clinica PrimeCare - Todos os direitos reservados. </footer>
