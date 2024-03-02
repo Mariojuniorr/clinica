@@ -26,7 +26,7 @@ p{
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .background-container {
@@ -52,7 +52,7 @@ p{
 
 .aboutUs_text{
     position: absolute;
-    top: 100px;
+    top: 40px;
     width: 40%;
     margin-left: 12%;
     margin-top: 8%;
@@ -70,20 +70,14 @@ p{
 }
 
 @media (max-width:1200px) {
-    .aboutUs_text{
-        top: 0px;
-        min-width: 70%;
-    }
-
     header{
         background-color: #245276;
     }
-}
-
-@media (max-width:900px) {
     .aboutUs_text{
         background-color: #3336;
-        margin: 10% auto;
+        min-width: 90%;
+        margin: 10% 0 0 0;
+        flex-wrap: wrap;
         display: flex;
         flex-direction: column;
     }
@@ -101,4 +95,5 @@ footer {
 
 footer p{
     font-size: medium;
+    text-align: center;
 }

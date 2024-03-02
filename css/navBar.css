@@ -27,16 +27,6 @@ header {
     z-index: 1;
 }
 
-
-.center{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 50px;
-    padding: 0 2%;
-    align-items: center;
-    justify-content: flex-end;
-}
-
 header img{
     width: 7vw;
     height: auto;
@@ -81,4 +71,53 @@ nav a:hover {
     border-radius: 5px;
     color: black;
     background: #129383;
+}
+
+.hamburger-menu{
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 24px;
+        height: 18px;
+        cursor: pointer;
+    }
+    
+    .line {
+        width: 100%;
+        height: 2px;
+        background-color: white;
+    }
+    
+    .hamburger-container {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+    }
+    
+    nav {
+        display: none;
+        flex-direction: column;
+        background-color: #245276;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    
+    nav.open {
+        display: flex;
+    }
+    
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 20px;
+        text-align: center;
+    }
 }

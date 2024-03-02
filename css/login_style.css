@@ -51,6 +51,7 @@ form img{
 
 form p {
     font-size: 14px;
+    text-align: center;
 }
 
 input, button {
@@ -79,17 +80,30 @@ button:hover{
 }
 
 input:focus{
-    box-shadow: 0 0 10px gray;
+    box-shadow: 0 0 10px #333;
 }
 
-footer{
-    color: #ddd;
-    background-color: rgb(28, 29, 31);
+footer {
+    background-color: rgb(39, 39, 39);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
     position: absolute;
     width: 100%;
-    display: flex;
-    bottom: 0;
-    padding: 5px;
-    font-size: small;
-    justify-content: center;
+}
+
+footer p{
+    font-size: medium;
+    text-align: center;
+}
+
+@media (max-width:900px) {
+    form{
+        width: 100%;
+        justify-content: center;
+    }
+    form img{
+        width: 30%;
+    }
 }
