@@ -34,11 +34,7 @@ header {
     margin: 0 50px;
     padding: 0 2%;
     align-items: center;
-
-}
-
-.logo{
-    width: 50%;
+    justify-content: flex-end;
 }
 
 header img{
@@ -46,12 +42,22 @@ header img{
     height: auto;
 }
 
-nav{
-    width: 50%;
-    text-align: right;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.center {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px;
+    padding: 0 2%;
+    align-items: center;
 }
 
 nav a{
+    left: 0;
     margin: 10px;
     padding: 5px 10px;
     font-size: 20px;
@@ -59,19 +65,19 @@ nav a{
     font-family: 'League Spartan', sans-serif;
 }
 
-a:link,
+nav a:link,
 a:visited {
     color: white;
     text-decoration: none;
 }
 
-a.active {
+nav a.active {
     border-radius: 5px;
     color: black;
     background: #129383;
 }
 
-a:hover {
+nav a:hover {
     border-radius: 5px;
     color: black;
     background: #129383;

@@ -4,7 +4,6 @@ body{
     margin: 0 auto;
     background-color: white;
     box-sizing: border-box;
-    background-color: #333;
 }
 
 
@@ -30,18 +29,18 @@ p{
     font-size: 22px;
 }
 
-.video-container {
+.background-container {
     position: relative;
     background-color: #333;
 }
 
-.video-container video {
+.background-container img {
     width: 100%;
-    height: auto;
+    height: 100vh;
     object-fit: cover;
 }
 
-.video-overlay {
+.background-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -61,29 +60,33 @@ p{
     color: #fff;
 }
 
-@media (max-width:1400px) {
-    .aboutUs_text{
-        top: 0px;
-        min-width: 80%;
-    }
-}
-
-@media (max-width:900px) {
-    .video-container{
-        display: none;
-    }
-    
-    .aboutUs_text{
-        position: relative;
-    }
-    body{
-        background-color: #333;
-    }
+.aboutUs_text p {
+    text-align: justify;
 }
 
 .aboutUs_text span{
     color: #129383;
     font-size: 70px;
+}
+
+@media (max-width:1200px) {
+    .aboutUs_text{
+        top: 0px;
+        min-width: 70%;
+    }
+
+    header{
+        background-color: #245276;
+    }
+}
+
+@media (max-width:900px) {
+    .aboutUs_text{
+        background-color: #3336;
+        margin: 10% auto;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 footer {
@@ -92,6 +95,8 @@ footer {
     display: flex;
     justify-content: center;
     bottom: 0;
+    position: absolute;
+    width: 100%;
 }
 
 footer p{
