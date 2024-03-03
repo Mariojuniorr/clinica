@@ -102,14 +102,16 @@ input:focus{
 }
 
 footer {
-    background-color: rgb(39, 39, 39);
+    background-color: #333;
     color: #fff;
     display: flex;
     justify-content: center;
+    align-items: center;
     bottom: 0;
-    position: absolute;
+    padding: 20px 0px 10px;
+    position: fixed;
     width: 100%;
-    padding: 10px;
+    height: 10px;
 }
 
 footer p{
