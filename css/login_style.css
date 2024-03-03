@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+
 body {
     margin: 0 auto;
     font-family: Arial, sans-serif;
@@ -54,7 +62,7 @@ form p {
     text-align: center;
 }
 
-input, button {
+input{
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -64,23 +72,33 @@ input, button {
     background-color: transparent;
     border-radius: 5px;
     font-size: 16px; 
-    font-family: Arial, sans-serif; 
     color: #333; 
 }
 
-button{
+p{
+    font-family: "League Spartan", sans-serif;
+}
+
+input[type="submit"]{
     background-color: rgb(41, 42, 44);
     color: white;
     font-size: large;
     cursor: pointer;
 }
 
-button:hover{
+input[type="submit"]:hover{
     background-color: #245276;
 }
 
 input:focus{
     box-shadow: 0 0 10px #333;
+}
+
+#error-message{
+    color: red;
+    font-family: "League Spartan", sans-serif;
+    text-align: center;
+    font-size: 13px;
 }
 
 footer {
@@ -91,6 +109,7 @@ footer {
     bottom: 0;
     position: absolute;
     width: 100%;
+    padding: 10px;
 }
 
 footer p{

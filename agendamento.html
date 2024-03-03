@@ -20,7 +20,7 @@
             </div>
         </div>
             <nav>
-                <a href="home.html">Home</a>
+                <a href="index.html">Home</a>
                 <a href="galeria.html">Galeria</a>
                 <a class="active" href="agendamento.html">Agendamento</a>
                 <a href="novoEnd.html">Novo Endereço</a>
@@ -29,26 +29,30 @@
         </div>
     </header>
 
-    <div class="overlay"></div>
     <main>
-        <div class="cadastroEndereco">
+        <div class="agendamento-container">
             <h1>Agendamento Consulta Médica</h1>
             <form action="agendamento_consulta.php" method="post">
                 <p>Especialidade:
-                    <select name="especialidade">
-                        <option> a definir lista</option>
+                    <select name="especialidade" required>
+                        <option value=""> Selecione uma opção</option>
+                        <option value="clinicageral">Clínica Geral / Medicina Interna</option>
+                        <option value="pediatria">Pediatria</option>
+                        <option value="ginecologia">Ginecologia e Obstetrícia</option>
+                        <option value="cirurgiageral">Cirurgia Geral</option>
+                        <option value="dermatologia">Dermatologia</option>
+                        <option value="ortopedia">Ortopedia</option>
+                        <option value="cardiologia">Cardiologia</option>
                     </select>
                 </p>
                 <p>Médico Especialista:
-                    <select name="medico">
-                        <option> a definir lista</option>
+                    <select name="medico" required>
+                        <option value=""> Selecione uma opção</option>
                     </select>
                 </p>
                 <label for="data">Data da Consulta:</label>
                 <input type="datetime-local" id="data" name="data">
             </form>
-        </div>
-        <div>
             <h2>Dados Pessoais</h2>
             <form action="cadastrar_dados.php" method="post">
                 <p>
